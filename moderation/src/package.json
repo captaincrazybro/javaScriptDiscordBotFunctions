@@ -1,0 +1,15 @@
+{
+  "name": "mutiniesbot",
+  "version": "1.0.0",
+  "description": "The official bot for Mutinies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Capt",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "ms": "^2.1.1"
+  }
+}
