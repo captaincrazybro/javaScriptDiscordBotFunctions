@@ -7,7 +7,7 @@ let prefix = botConfig.prefix;
 
 module.exports.run = async (bot, message, args) => {
 	let kUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-	if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send(":x:" + " You do not have permission to execute this command").then(m => {
+	if(!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send(":x:" + " You do not have permission to execute this command").then(m => {
 		message.delete().catch(O_o=>{});
 		m.delete(5000);
 	}); 
