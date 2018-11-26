@@ -1,5 +1,5 @@
 This is a function where you can create teams with rosters.
-This function does not have any dependencies.
+This function relies on the discord.js dependency. 
 
 COMMANDS
 "<>" means required and "[]" means optional
