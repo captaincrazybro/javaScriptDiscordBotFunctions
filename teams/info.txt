@@ -1,0 +1,30 @@
+This is a function where you can create teams with rosters.
+This function does not have any dependencies.
+
+COMMANDS
+"<>" means required and "[]" means optional
+
+/user set <player> <team> [role:{leader}]
+  usage: Use this command to set which team a player is on. Specify "none" for team to make it so that the player is not on any teams.
+  permission: KICK_MEMBERS
+  
+/team create <name>
+  usage: Use this command to create a new team. create, delete, remove and list are all invalid team names.
+  permission: KICK_MEMBERS
+  
+/team delete <name>
+  aliase: /team remove <team>
+  usage: Use this command to delete/remove a team.
+  permission: KICK_MEMBERS
+  
+/team <name>
+  usage: Use this command to view the players in the specified team.
+  permission: EVERYONE
+  
+/teams
+  aliase: /team list
+  usage: Use this command to get a list of all the teams.
+  permission: EVERYONE
+  
+REQUIRED BOT PERMISSION(S)
+This bot requires the Administrator permission.
