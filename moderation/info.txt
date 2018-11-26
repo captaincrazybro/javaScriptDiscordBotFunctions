@@ -1,1 +1,2 @@
-
+This is a function that includes bassic moderation functions.
+This function relies on the ms and discord.js dependencies. 
