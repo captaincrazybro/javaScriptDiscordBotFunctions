@@ -1,2 +1,48 @@
 This is a function that includes bassic moderation functions.
 This function relies on the ms and discord.js dependencies. 
+
+COMMANDS
+"<>" means required and "[]" means optional
+
+/user set <player> <team> [role:{leader}]
+  usage: Use this command to set which team a player is on. Specify "none" for team to make it so that the player is not on any teams.
+  permission: KICK_MEMBERS
+  
+/warn <user> <reason
+  usage: Use this to warn a user for a specified reason.
+  permission: MANAGE_MESSAGES
+  
+/warnings <user>
+  usage: Use this to get the warnings a specified user has.
+  permission: MANAGE_MESSAGES
+  
+/history <user>
+  usage: Use this to get the moderation history of a specified user.
+  permission: MANAGE_MESSAGES
+  
+/mute <user> <time (I.E. 1m, 3d etc.)> <reason>
+  usage: Use this to temporarily mute mute a specified user for a specified reason.
+  permission: MANAGE_MESSAGES
+  
+/mute <user>
+  usage: Use this to permanently mute a specified user. 
+  permission: MANAGE_MESSAGES
+  
+/kick <user> <reason>
+  usage: Use this to kick a specified user.
+  permission: KICK_MEMBERS
+  
+/ban <user> <time (I.E. 1m, 3d etc.)> <reason>
+  usage: Use this to temporarily ban a specified user for a specified reason.
+  permission: BAN_MEMBERS
+  
+/ban <user>
+  usage: Use this to permanently ban a specified user.
+  permission: BAN_MEMBERS
+  
+/report <user> <reason>
+  usage: Use this to report a specified user for a specified reason.
+  permission: EVERYONE
+
+REQUIRED BOT PERMISSION(S)
+This bot requires the Administrator permission.
