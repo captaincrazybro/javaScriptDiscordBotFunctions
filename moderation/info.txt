@@ -40,6 +40,10 @@ COMMANDS
   usage: Use this to permanently ban a specified user.
   permission: BAN_MEMBERS
   
+/purge <user>
+  usage: Use this to purge messages from a specified user.
+  permission: MANAGE_MESSAGES
+  
 /report <user> <reason>
   usage: Use this to report a specified user for a specified reason.
   permission: EVERYONE
