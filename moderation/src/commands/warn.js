@@ -9,19 +9,13 @@ let prefix = botConfig.prefix;
 module.exports.run = async (bot, message, args) => {
 		
 	let wUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-	let trainrole = message.guild.roles.find(`name`, "Trainee");
-	let check = message.member.roles.has(trainrole.id);
-		
- 	if(!check){
-		if(!message.member.hasPermission("MANAGE_MESSAGES")){
-			message.channel.send(":x:" + " ***You do not have permissions to execute this command***").then(m => {
-				message.delete().catch(O_o=>{});
-				m.delete(5000);
-			}); 
-			return;
-		}
-	}else{
-
+	
+	if(!message.member.hasPermission("MANAGE_MESSAGES")){
+		message.channel.send(":x:" + " ***You do not have permissions to execute this command***").then(m => {
+			message.delete().catch(O_o=>{});
+			m.delete(5000);
+		}); 
+		return;
 	}
 
 	if(!wUser) return message.channel.send(":x:" + " ***I couldn't find this user***").then(m => {
